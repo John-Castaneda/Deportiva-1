@@ -1,0 +1,17 @@
+﻿@page
+@model Frontend.Pages.MunIndexModel
+@{
+    ViewData["Title"]="Municipio";
+}
+<h1>Listado de Municipios</h1>
+
+<table>
+    @foreach (var municipio in Model.Municipios)
+    {
+        <tr>
+            <td>@municipio.Id</td>
+            <td>@municipio.Nombre</td>
+        </tr>
+    }
+</table>
+<p>Prueba de Repositorio</p>
